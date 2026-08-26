@@ -1,0 +1,2 @@
+<?php
+require __DIR__.'/../includes/bootstrap.php';require_login();header('Content-Type: application/json');$q=trim($_GET['q']??'');$s=db()->prepare("SELECT id,name,sku,price,stock_quantity,image FROM products WHERE status='active' AND stock_quantity>0 AND (name LIKE ? OR sku LIKE ?) ORDER BY name LIMIT 30");$like='%'.$q.'%';$s->execute([$like,$like]);echo json_encode(['products'=>$s->fetchAll()],JSON_UNESCAPED_UNICODE);

@@ -1,0 +1,4 @@
+<?php
+require __DIR__.'/../includes/bootstrap.php';require_login('admin');
+$orders=db()->query('SELECT o.*,u.name cashier FROM orders o JOIN users u ON u.id=o.cashier_id ORDER BY o.id DESC')->fetchAll();$pageTitle='Sales';require __DIR__.'/../includes/header.php';?>
+<h1 class="h3 mb-3">All Sales</h1><div class="card p-3 table-responsive"><table class="table"><thead><tr><th>Receipt</th><th>Cashier</th><th>Total</th><th>Payment</th><th>Paid</th><th>Date</th></tr></thead><tbody><?php foreach($orders as $o):?><tr><td><a href="<?=e(url('cashier/receipt.php?id='.$o['id']))?>"><?=e($o['receipt_number'])?></a></td><td><?=e($o['cashier'])?></td><td><?=money($o['grand_total'])?></td><td><?=e(strtoupper($o['payment_method']))?></td><td><?=money($o['amount_paid'])?></td><td><?=e($o['created_at'])?></td></tr><?php endforeach;?></tbody></table></div><?php require __DIR__.'/../includes/footer.php';
