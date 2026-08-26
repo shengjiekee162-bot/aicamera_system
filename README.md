@@ -32,13 +32,31 @@ Identify products with a camera, add trusted catalog items to a POS cart, comple
 
 ## 🖼️ Screenshots
 
-<!--
-Real screenshots belong in screenshots/ and are displayed in a balanced 2x2 table.
-Required files: login.png, admin-dashboard.png, products.png, camera-pos.png.
-The image table will be enabled after the four original PNG files are present.
--->
+<!-- Keep screenshots in pairs to preserve the balanced two-column layout. -->
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="screenshots/login.png" alt="AI Camera POS login page" width="100%"><br>
+      <sub><b>Login Page</b></sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="screenshots/admin-dashboard.png" alt="AI Camera POS administrator dashboard" width="100%"><br>
+      <sub><b>Admin Dashboard</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="screenshots/products.png" alt="AI Camera POS product management" width="100%"><br>
+      <sub><b>Product Management</b></sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="screenshots/camera-pos.png" alt="AI Camera product scanning POS" width="100%"><br>
+      <sub><b>Camera POS</b></sub>
+    </td>
+  </tr>
+</table>
 
-The screenshot folder is ready. Add the four original PNG files to [`screenshots/`](screenshots/) so the real 2×2 gallery can be displayed without broken image links.
+> Screenshots are displayed two per row. Add future screenshots in pairs to keep the gallery balanced.
 
 ## ✅ Requirements
 
