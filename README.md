@@ -30,6 +30,14 @@ Identify products with a camera, add trusted catalog items to a POS cart, comple
 | Gemini fallback | One shared API key, five model slots, selectable active model, and automatic quota fallback |
 | Security | Password hashing, CSRF protection, sessions, PDO prepared statements, and verified TLS |
 
+## 🖼️ Screenshots
+
+<p align="center">
+  <img src="screenshots/ai-camera-pos-gallery.png" alt="AI Camera POS login, dashboard, products, and camera POS screens" width="100%">
+</p>
+
+<p align="center"><sub><b>Login · Admin Dashboard · Product Management · Camera POS</b></sub></p>
+
 ## ✅ Requirements
 
 - XAMPP, or another Apache/PHP/MySQL environment
