@@ -43,6 +43,14 @@ function setting(string $key, string $default = ''): string {
     $stmt->execute([$key]); return (string)($stmt->fetchColumn() ?: $default);
 }
 function money(float|string $amount): string { return 'RM' . number_format((float)$amount, 2); }
+function payment_label(string $method): string {
+    return match ($method) {
+        'cash' => 'Cash',
+        'tng', 'qr' => 'TNG eWallet',
+        'card' => 'Card',
+        default => strtoupper($method),
+    };
+}
 function curl_tls_options(): array {
     $options = [
         CURLOPT_SSL_VERIFYPEER => true,

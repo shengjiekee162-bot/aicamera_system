@@ -22,7 +22,7 @@ Identify products with a camera, add trusted catalog items to a POS cart, comple
 | Area | Capabilities |
 |---|---|
 | AI camera | Automatic photo capture, Gemini product detection, quantity recognition, and manual image upload |
-| Point of sale | Product search, cart quantities, discounts, payment methods, cash received, and change calculation |
+| Point of sale | Product search, cart quantities, discounts, Cash/TNG payments, cash calculator, and change calculation |
 | Product management | Product image, SKU, category, price, stock, and active/inactive status |
 | Inventory | Transaction-safe stock deduction, overselling prevention, and low-stock monitoring |
 | User management | Admin and Cashier accounts with role-based page access |
